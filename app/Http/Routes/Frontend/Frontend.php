@@ -4,6 +4,7 @@
  * Frontend Controllers
  */
 get('/', 'FrontendController@index')->name('home');
+get('/temas', 'Temas\TemasController@index')->name('temas');
 get('macros', 'FrontendController@macros');
 
 /**

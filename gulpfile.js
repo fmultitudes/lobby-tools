@@ -10,6 +10,7 @@ elixir(function(mix) {
         .copy('bower_components/jquery/dist/jquery.min.js', 'resources/assets/js/vendor')
         .copy('bower_components/bootstrap/dist/js/bootstrap.min.js', 'resources/assets/js/vendor')
         .copy('bower_components/modernizer/modernizr.js', 'resources/assets/js/vendor')
+        .copy('bower_components/angular/angular.min.js', 'resources/assets/js/vendor')
         
         .copy('bower_components/bootstrap/dist/css/bootstrap.min.css', 'resources/assets/css/vendor')
         .copy('bower_components/fontawesome/css/font-awesome.min.css', 'resources/assets/css/vendor')
@@ -49,6 +50,7 @@ elixir(function(mix) {
                 'vendor/jquery.min.js',
                 'vendor/modernizr.js',
                 'vendor/bootstrap.min.js',
+                'vendor/angular.min.js'
             ], 'public/js/vendor.js')
 
         // Apply version control

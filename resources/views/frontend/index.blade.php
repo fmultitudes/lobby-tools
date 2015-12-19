@@ -51,7 +51,5 @@
 
 @section('after-scripts-end')
 	<script>
-		//Being injected from FrontendController
-		console.log(test);
 	</script>
 @stop

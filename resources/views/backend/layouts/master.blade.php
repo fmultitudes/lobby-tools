@@ -11,6 +11,7 @@
         @yield('meta')
 
         @yield('before-styles-end')
+        {!! HTML::style(elixir('css/vendor.css')) !!}
         {!! HTML::style(elixir('css/backend.css')) !!}
         @yield('after-styles-end')
 
@@ -46,11 +47,8 @@
           @include('backend.includes.footer')
         </div><!-- ./wrapper -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{asset('js/vendor/jquery-1.11.2.min.js')}}"><\/script>')</script>
-        {!! HTML::script('js/vendor/bootstrap.min.js') !!}
-
         @yield('before-scripts-end')
+        {!! HTML::script(elixir('js/vendor.js')) !!}
         {!! HTML::script(elixir('js/backend.js')) !!}
         @yield('after-scripts-end')
     </body>

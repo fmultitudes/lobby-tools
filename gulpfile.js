@@ -2,12 +2,17 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix
-        .phpUnit()
+        //.phpUnit()
 
-        // Copy needed files from /node directories to /public directory.
-        .copy('node_modules/font-awesome/fonts', 'public/build/fonts/font-awesome')
-        .copy('node_modules/bootstrap-sass/assets/fonts/bootstrap', 'public/build/fonts/bootstrap')
-        .copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js', 'public/js/vendor')
+        //copy
+        .copy('bower_components/fontawesome/fonts', 'public/build/fonts')
+        .copy('bower_components/bootstrap/dist/fonts', 'public/build/fonts/bootstrap')
+        .copy('bower_components/jquery/dist/jquery.min.js', 'resources/assets/js/vendor')
+        .copy('bower_components/bootstrap/dist/js/bootstrap.min.js', 'resources/assets/js/vendor')
+        .copy('bower_components/modernizer/modernizr.js', 'resources/assets/js/vendor')
+        
+        .copy('bower_components/bootstrap/dist/css/bootstrap.min.css', 'resources/assets/css/vendor')
+        .copy('bower_components/fontawesome/css/font-awesome.min.css', 'resources/assets/css/vendor')
 
         .sass([ // Process front-end stylesheets
                 'frontend/main.scss'
@@ -35,8 +40,19 @@ elixir(function(mix) {
                 'backend/custom.js'
             ], 'public/js/backend.js')
 
+        //vendor
+        .styles([ // Combine vendor CSS files
+                'vendor/bootstrap.min.css',
+                'vendor/font-awesome.min.css',
+            ], 'public/css/vendor.css')
+        .scripts([ // Combine vendor scripts
+                'vendor/jquery.min.js',
+                'vendor/modernizr.js',
+                'vendor/bootstrap.min.js',
+            ], 'public/js/vendor.js')
+
         // Apply version control
-        .version(["public/css/frontend.css", "public/js/frontend.js", "public/css/backend.css", "public/js/backend.js"]);
+        .version(["public/css/vendor.css", "public/js/vendor.js", "public/css/frontend.css", "public/js/frontend.js", "public/css/backend.css", "public/js/backend.js"]);
 });
 
 /**

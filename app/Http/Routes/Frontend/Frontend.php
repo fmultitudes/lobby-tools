@@ -4,7 +4,11 @@
  * Frontend Controllers
  */
 get('/', 'FrontendController@index')->name('home');
+
+get('/temas/api/rechazadas/{q}', 'Temas\TemasController@rechazadas')->name('temas.rechazadas');
+get('/temas/api/realizadas/{q}', 'Temas\TemasController@realizadas')->name('temas.realizadas');
 get('/temas', 'Temas\TemasController@index')->name('temas');
+
 get('macros', 'FrontendController@macros');
 
 /**

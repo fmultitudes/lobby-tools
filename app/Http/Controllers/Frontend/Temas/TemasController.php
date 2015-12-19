@@ -16,12 +16,19 @@ class TemasController extends Controller {
 
 		$view = view('frontend.temas.index');
 
-		if(\Input::has('q')){
-			$view->withQuery(\Input::get('q'));
-			$view->withRechazadas(array(1));
-			$view->withRealizadas(array(2));
-		}
 		return $view;
+	}
+
+	public function rechazadas($q)
+	{
+		$resp = array('q'=>$q,'list'=>array());
+		return response()->json($resp);
+	}
+
+	public function realizadas($q)
+	{
+		$resp = array('q'=>$q,'list'=>array());
+		return response()->json($resp);
 	}
 
 }

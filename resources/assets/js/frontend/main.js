@@ -37,6 +37,16 @@ LobbyApp.controller('TemasController', ['$scope','$http', function($scope,$http)
 
   };
 
+  $scope.openRealizadas = function(au){
+    $scope.realizadas_selected = au;
+    $('#realizadas_selected').modal('show')
+  };
+
+  $scope.openRechazadas = function(au){
+    $scope.rechazadas_selected = au;
+    $('#rechazadas_selected').modal('show')
+  };
+
 }]);
 
 $(function(){

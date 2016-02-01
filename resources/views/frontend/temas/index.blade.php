@@ -34,16 +34,18 @@
         <table ng-hide="loadingRealizadas" class="table table-striped">
           <thead>
             <tr>
+              <th>Fecha</th>
               <th>Activo</th>
               <th>Pasivo</th>
-              <th>Resumen</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="r in realizadas">
+              <td>@{{r.fecha.value}}</td>
               <td>@{{r.pasivo.value}}</td>
               <td>@{{r.activos.value}}</td>
-              <td>@{{r.observaciones.value}}</td>
+              <td><a class="btn btn-xs btn-info" ng-click="openRealizadas(r)">+</a></td>
             </tr>
           </tbody>
         </table>
@@ -54,23 +56,80 @@
       <table ng-hide="loadingRechazadas" class="table table-striped">
         <thead>
           <tr>
+            <th>Fecha</th>
             <th>Activo</th>
             <th>Pasivo</th>
-            <th>Resumen</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr ng-repeat="r in rechazadas">
+            <td>@{{r.fecha_ingreso}}</td>
             <td>@{{r.pasivo}}</td>
             <td>@{{r.activo}}</td>
-            <td>@{{r.materia_resumen}}</td>
+            <td><a class="btn btn-xs btn-info" ng-click="openRechazadas(r)">+</a></td>
           </tr>
         </tbody>
       </table>      
     </div>
   </div>
 
+  <div class="modal fade" id="realizadas_selected" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Detalle audiencia Realizada</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Fecha de ingreso</h4>
+          <p>@{{realizadas_selected.fecha.value}}</p>
+          <h4>Activo</h4>
+          <p>@{{realizadas_selected.pasivo.value}}</p>
+          <h4>Pasivo</h4>
+          <p>@{{realizadas_selected.activos.value}}</p>
+          <h4>Institución</h4>
+          <p>@{{realizadas_selected.nombreInstitucion.value}}</p>
+          <h4>Tema</h4>
+          <p>@{{realizadas_selected.observaciones.value}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="rechazadas_selected" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Detalle audiencia Rechazada</h4>
+        </div>
+        <div class="modal-body">
+          <h4>Fecha de ingreso</h4>
+          <p>@{{rechazadas_selected.fecha_ingreso}}</p>
+          <h4>Activo</h4>
+          <p>@{{rechazadas_selected.pasivo}}</p>
+          <h4>Pasivo</h4>
+          <p>@{{rechazadas_selected.activo}}</p>
+          <h4>Institución</h4>
+          <p>@{{rechazadas_selected.ministerio}}</p>
+          <h4>Tema</h4>
+          <p>@{{rechazadas_selected.materia_resumen}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
 @endsection
 
 @section('after-scripts-end')

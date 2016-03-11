@@ -90,8 +90,10 @@
           <p>@{{realizadas_selected.activos.value}}</p>
           <h4>Institución</h4>
           <p>@{{realizadas_selected.nombreInstitucion.value}}</p>
-          <h4>Tema</h4>
+          <h4>Observaciones</h4>
           <p>@{{realizadas_selected.observaciones.value}}</p>
+          <h4>Materia</h4>
+          <p>@{{realizadas_selected.materias.value}}</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>

@@ -42,7 +42,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="r in realizadas">
-              <td>@{{r.fecha.value}}</td>
+              <td>@{{r.dia.value}}/@{{r.mes.value}}/@{{r.agno.value}}</td>
               <td>@{{r.pasivo.value}}</td>
               <td>@{{r.activos.value}}</td>
               <td><a class="btn btn-xs btn-info" ng-click="openRealizadas(r)">+</a></td>
@@ -83,7 +83,7 @@
         </div>
         <div class="modal-body">
           <h4>Fecha de ingreso</h4>
-          <p>@{{realizadas_selected.fecha.value}}</p>
+          <p>@{{realizadas_selected.dia.value}}/@{{realizadas_selected.mes.value}}/@{{realizadas_selected.agno.value}}</p>
           <h4>Activo</h4>
           <p>@{{realizadas_selected.pasivo.value}}</p>
           <h4>Pasivo</h4>

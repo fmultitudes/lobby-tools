@@ -45,7 +45,6 @@ body {
   background: url("../img/boxed-bg.jpg") repeat fixed; }
 
 .content-wrapper, .right-side, .main-footer {
-  transition: -webkit-transform 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
   transition: transform 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
   transition: margin-left 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
   margin-left: 230px;
@@ -64,7 +63,6 @@ body {
 
 @media (max-width: 767px) {
   .sidebar-open .content-wrapper, .sidebar-open .right-side, .sidebar-open .main-footer {
-    -webkit-transform: translate(230px, 0);
     transform: translate(230px, 0); } }
 
 .content-wrapper, .right-side {
@@ -306,22 +304,18 @@ a:hover, a:active, a:focus {
   min-height: 100%;
   width: 230px;
   z-index: 810;
-  transition: -webkit-transform 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15);
   transition: transform 0.3s cubic-bezier(0.32, 1.25, 0.375, 1.15); }
 
 @media (max-width: 767px) {
   .main-sidebar, .left-side {
-    -webkit-transform: translate(-230px, 0);
     transform: translate(-230px, 0); } }
 
 @media (min-width: 768px) {
   .sidebar-collapse .main-sidebar, .sidebar-collapse .left-side {
-    -webkit-transform: translate(-230px, 0);
     transform: translate(-230px, 0); } }
 
 @media (max-width: 767px) {
   .sidebar-open .main-sidebar, .sidebar-open .left-side {
-    -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
 
 .sidebar {
@@ -400,7 +394,6 @@ a:hover, a:active, a:focus {
   margin-top: 3px; }
 
 .sidebar-menu li.active > a > .fa-angle-left {
-  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
 .sidebar-menu li.active > .treeview-menu {
@@ -650,51 +643,23 @@ a:hover, a:active, a:focus {
     line-height: 10px; } }
 
 .open:not(.dropup) > .animated-dropdown-menu {
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
-  -webkit-animation: flipInX .7s both;
   animation: flipInX .7s both; }
 
 @keyframes flipInX {
   0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transition-timing-function: ease-in;
     opacity: 0; }
   40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     transition-timing-function: ease-in; }
   60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     opacity: 1; }
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
     transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
   100% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px); } }
-
-@-webkit-keyframes flipInX {
-  0% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transition-timing-function: ease-in;
-    opacity: 0; }
-  40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transition-timing-function: ease-in; }
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1; }
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
-  100% {
-    -webkit-transform: perspective(400px);
     transform: perspective(400px); } }
 
 .navbar-custom-menu > .navbar-nav > li {
@@ -1883,11 +1848,9 @@ table.text-center, table.text-center td, table.text-center th {
   padding: 0; }
 
 .direct-chat.chat-pane-open .direct-chat-contacts {
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0); }
 
 .direct-chat-messages {
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   padding: 10px;
   height: 250px;
@@ -1907,7 +1870,6 @@ table.text-center, table.text-center td, table.text-center th {
   clear: both; }
 
 .direct-chat-messages, .direct-chat-contacts {
-  transition: -webkit-transform .5s ease-in-out;
   transition: transform .5s ease-in-out; }
 
 .direct-chat-text {
@@ -1969,11 +1931,9 @@ table.text-center, table.text-center td, table.text-center th {
   color: #999; }
 
 .direct-chat-contacts-open .direct-chat-contacts {
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0); }
 
 .direct-chat-contacts {
-  -webkit-transform: translate(100%, 0);
   transform: translate(100%, 0);
   position: absolute;
   top: 0;
@@ -2800,11 +2760,9 @@ table.text-center, table.text-center td, table.text-center th {
   line-height: 30px; }
 
 .fc-color-picker > li .fa {
-  transition: -webkit-transform linear .3s;
   transition: transform linear .3s; }
 
 .fc-color-picker > li .fa:hover {
-  -webkit-transform: rotate(30deg);
   transform: rotate(30deg); }
 
 #add-new-event {
@@ -3128,7 +3086,6 @@ table.text-center, table.text-center td, table.text-center th {
   .content-wrapper, .right-side, .main-footer {
     margin-left: 0 !important;
     min-height: 0 !important;
-    -webkit-transform: translate(0, 0) !important;
     transform: translate(0, 0) !important; }
   .fixed .content-wrapper, .fixed .right-side {
     padding-top: 0 !important; }

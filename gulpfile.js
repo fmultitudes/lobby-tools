@@ -14,6 +14,7 @@ elixir(function(mix) {
         
         .copy('bower_components/bootstrap/dist/css/bootstrap.min.css', 'resources/assets/css/vendor')
         .copy('bower_components/fontawesome/css/font-awesome.min.css', 'resources/assets/css/vendor')
+        .copy('resources/assets/img/*.*', 'public/build/img')
 
         .sass([ // Process front-end stylesheets
                 'frontend/main.scss'

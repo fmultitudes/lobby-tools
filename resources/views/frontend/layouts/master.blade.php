@@ -30,10 +30,8 @@
 
         @include('frontend.includes.nav')
 
-        <div class="container">
-            @include('includes.partials.messages')
-            @yield('content')
-        </div><!-- container -->
+        @include('includes.partials.messages')
+        @yield('content')
 
         @yield('before-scripts-end')
         {!! HTML::script(elixir('js/vendor.js')) !!}

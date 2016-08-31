@@ -4,7 +4,7 @@
     <div class="container-fluid container-bg">
       <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">Ley del Lobby</h1>
+            <h1 class="text-center">Portal de lobby ciudadano</h1>
         </div>
       </div>
       <div class="row">
@@ -14,7 +14,7 @@
               <img src="/build/img/logoFM.png" class="img-responsive" />
             </div><!-- row -->
             <div class="col-md-7">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Fundación multitudes pone a disposición de la sociedad civil una herramienta para la fiscalización social del ejercicio de la ley de lobby. La herramienta tiene el objetivo de entregar recursos a los ciudadanos para que efectivamente podamos monitorear cómo se lleva a cabo el lobby en nuestro país y así, facilitar el mejoramiento continuo de la aplicación de la ley de lobby a través de la interacción de los usuarios.</p>
             </div><!-- row -->
           </div><!-- row -->
         </div><!-- row -->
@@ -33,7 +33,7 @@
               <div class="title"> 
                 <a href="/temas">¿Nos reciben a todos?</a> 
               </div> 
-              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="desc">Te negaron una audiencia ¿quieres saber si alguien se le otorgaron una audiencia sobre el mismo tema? entra aquí y confirma el principio de igualdad de trato.</div>
             </div>
             <div class="bottom"> </div> 
           </div> 

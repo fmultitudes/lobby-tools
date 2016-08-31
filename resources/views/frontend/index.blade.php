@@ -26,7 +26,7 @@
         <div class="col-md-4">
 
           <div class="card hovercard"> 
-            <div class="cardheader">
+            <div class="cardheader trato">
               <a href="/temas" class="hovertitle"><h3>Sobre igualdad de trato</h3></a>
             </div> 
             <div class="info"> 
@@ -42,14 +42,14 @@
         <div class="col-md-4">
 
           <div class="card hovercard"> 
-            <div class="cardheader">
-              <a class="hovertitle"><h3>Próximamente</h3></a>
+            <div class="cardheader roles">
+              <a class="hovertitle hovertitle-soon"><h3>Próximamente</h3></a>
             </div> 
             <div class="info"> 
               <div class="title"> 
                 <a>¿Quién es quién?</a> 
               </div> 
-              <div class="desc">Sobre roles. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="desc">Posibilidad de investigar sobre roles de funcionarios. Próximamente.</div>
             </div>
             <div class="bottom"> </div> 
           </div> 
@@ -58,14 +58,14 @@
         <div class="col-md-4">
 
           <div class="card hovercard"> 
-            <div class="cardheader">
-              <a class="hovertitle"><h3>Próximamente</h3></a>
+            <div class="cardheader viajes">
+              <a class="hovertitle hovertitle-soon"><h3>Próximamente</h3></a>
             </div> 
             <div class="info"> 
               <div class="title"> 
                 <a>¿Dónde viajan?</a> 
               </div> 
-              <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              <div class="desc">Herramienta de análisis sobre viajes de los funcionarios. Próximamente.</div>
             </div>
             <div class="bottom"> </div> 
           </div> 

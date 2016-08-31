@@ -43,8 +43,8 @@
             <thead>
               <tr>
                 <th class="text-center">Fecha</th>
-                <th class="text-center">Activo</th>
                 <th class="text-center">Pasivo</th>
+                <th class="text-center">Activo</th>
                 <th class="text-center"></th>
               </tr>
             </thead>
@@ -65,8 +65,8 @@
           <thead>
             <tr>
               <th class="text-center">Fecha</th>
-              <th class="text-center">Activo</th>
               <th class="text-center">Pasivo</th>
+              <th class="text-center">Activo</th>
               <th class="text-center"></th>
             </tr>
           </thead>

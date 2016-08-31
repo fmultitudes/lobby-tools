@@ -32,6 +32,7 @@
             @include('includes.partials.messages')
             @yield('content')
         </div><!-- container -->
+        @include('frontend.includes.footer')
 
         @yield('before-scripts-end')
         {!! HTML::script(elixir('js/vendor.js')) !!}

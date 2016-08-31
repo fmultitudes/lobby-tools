@@ -41,6 +41,43 @@ body{
 	}
 }
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .container-bg{
+        h1{
+            font-size:8em;
+        }
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .container-bg{
+        h1{
+            font-size:5em;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    .container-bg{
+        h1{
+            font-size: 3em;
+        }
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
 .btn-red{
 	background-color: #E42029;
 	color: #fff;
@@ -273,7 +310,6 @@ table{
     background-color: rgba(214, 224, 226, 0.2);
 }
 .card.hovercard .cardheader {
-    background: url("http://lorempixel.com/850/280/nature/4/");
     background-size: cover;
     height: 135px;
     a.hovertitle{
@@ -298,7 +334,21 @@ table{
     		display: block;
     	}
     }
+    a.hovertitle-soon{
+        background-color: rgba(100, 100, 100,0.5);
+        display: block;
+    }
 }
+.cardheader.trato{
+    background: url("../img/igualdad.jpg");
+}
+.cardheader.roles{
+    background: url("../img/mascara.jpg");
+}
+.cardheader.viajes{
+    background: url("../img/viaje.jpg");
+}
+
 .card.hovercard .avatar {
     position: relative;
     top: -35px;
@@ -336,4 +386,20 @@ table{
 .card.hovercard .bottom {
     padding: 0 20px;
     margin-bottom: 17px;
+}
+
+.footer-lobby{
+    background-image: url("../img/footer.jpg");
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 100px;
+    background-color: #0F74BA;
+    p.lead{
+        margin-top: 30px;
+        color: #fff;
+        font-weight: normal;
+    }
+    img{
+        margin: 0 auto;
+    }
 }
